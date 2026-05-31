@@ -1,0 +1,15 @@
+node_modules/
+main.js
+*.map
+dist/
+build/
+.obsidian/
+data.json
+workspace.json
+workspace-mobile.json
+community-plugins.json
+*.md~
+.DS_Store
+attachments/
+Attachments/
+screenshots/

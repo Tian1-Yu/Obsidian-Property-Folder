@@ -1,0 +1,10 @@
+{
+  "id": "property-folder",
+  "name": "Property Folder",
+  "version": "1.0.0",
+  "minAppVersion": "1.7.0",
+  "description": "Browse and manage nested note properties.",
+  "author": "Tian1-Yu",
+  "authorUrl": "https://github.com/Tian1-Yu",
+  "isDesktopOnly": false
+}

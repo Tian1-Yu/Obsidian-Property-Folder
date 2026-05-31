@@ -1,0 +1,210 @@
+.property-folder-view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 8px;
+  padding: 8px;
+}
+
+.property-folder-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.property-folder-header h4 {
+  margin: 0;
+}
+
+.property-folder-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.property-folder-icon-button {
+  align-items: center;
+  border-radius: 6px;
+  display: inline-flex;
+  height: 28px;
+  justify-content: center;
+  padding: 4px;
+  width: 28px;
+}
+
+.property-folder-search {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.property-folder-body {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: minmax(120px, 45%) 1fr;
+  min-height: 0;
+}
+
+.property-folder-tree,
+.property-folder-notes {
+  min-height: 0;
+  overflow: auto;
+}
+
+.property-folder-row {
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  min-width: 0;
+  padding: 5px 7px;
+}
+
+.property-folder-row:hover,
+.property-folder-row.is-selected {
+  background: var(--background-modifier-hover);
+}
+
+.property-folder-row-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.property-folder-property,
+.property-folder-note-path {
+  color: var(--text-muted);
+}
+
+.property-folder-value,
+.property-folder-note-title {
+  color: var(--text-normal);
+}
+
+.property-folder-count {
+  color: var(--text-muted);
+  flex: 0 0 auto;
+  font-variant-numeric: tabular-nums;
+}
+
+.property-folder-child-list {
+  border-left: 1px solid var(--background-modifier-border);
+  margin-left: 14px;
+  padding-left: 10px;
+}
+
+.property-folder-child {
+  color: var(--text-muted);
+}
+
+.property-folder-notes-title {
+  align-items: center;
+  border-bottom: 1px solid var(--background-modifier-border);
+  display: flex;
+  font-weight: 600;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+}
+
+.property-folder-note {
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 6px 7px;
+}
+
+.property-folder-note:hover {
+  background: var(--background-modifier-hover);
+}
+
+.property-folder-note-path {
+  font-size: var(--font-ui-smaller);
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.property-folder-empty {
+  color: var(--text-muted);
+  padding: 8px 2px;
+}
+
+.property-folder-settings .setting-item textarea {
+  width: 100%;
+}
+
+.property-folder-relations {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.property-folder-relation-card {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.property-folder-relation-group-header {
+  align-items: end;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-bottom: 10px;
+}
+
+.property-folder-relation-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.property-folder-relation-field label {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+}
+
+.property-folder-relation-field input {
+  width: 100%;
+}
+
+.property-folder-relation-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.property-folder-relation-table th,
+.property-folder-relation-table td {
+  border-top: 1px solid var(--background-modifier-border);
+  padding: 6px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.property-folder-relation-table th {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  font-weight: 600;
+}
+
+.property-folder-relation-table input[type="text"] {
+  width: 100%;
+}
+
+.property-folder-relation-table tr.is-invalid input[type="text"] {
+  border-color: var(--text-error);
+}
+
+@media (max-width: 600px) {
+  .property-folder-relation-group-header {
+    grid-template-columns: 1fr;
+  }
+
+  .property-folder-relation-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
