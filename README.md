@@ -1,5 +1,6 @@
 # Property Folder
 
+**根据自身笔记管理需求，参考tags folder vibe coding出来的一个插件，欢迎各位大佬指导**
 Property Folder is a community plugin for Obsidian that lets you browse and manage note property relationships as a tree.
 
 For example, you can configure:
